@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages &amp; Pricing — AJ Silver Service</title>
+  <meta name="description" content="Transparent pricing for every occasion. AJ Silver Service offers Essential, Premium and Bespoke halal catering packages for weddings, Eid, birthdays and more." />
+  <meta name="keywords" content="halal catering packages, Bengali catering pricing, wedding catering price, Eid catering packages UK" />
+  <meta property="og:title" content="Packages &amp; Pricing — AJ Silver Service" />
+  <meta property="og:description" content="Transparent pricing, exceptional value. Choose from Essential, Premium or fully Bespoke catering packages." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+    /* ── PRICING GRID ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .pricing-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+      }
+    }
+
+    .pricing-card.featured {
+      transform: translateY(-8px);
+    }
+
+    @media (max-width: 899px) {
+      .pricing-card.featured {
+        transform: none;
+        order: -1;
+      }
+    }
+
+    .pricing-guest-range {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-silver);
+      background-color: rgba(168,178,188,0.08);
+      border: 1px solid rgba(168,178,188,0.2);
+      border-radius: var(--radius-full);
+      padding: 0.3em 1em;
+      margin-bottom: var(--space-6);
+    }
+
+    .pricing-bespoke-note {
+      font-size: var(--text-sm);
+      color: var(--color-text-subtle);
+      text-align: center;
+      margin-top: var(--space-5);
+      font-style: italic;
+      max-width: 480px;
+      margin-inline: auto;
+    }
+
+    /* FAQ section */
+    .faq-section {
+      background-color: var(--color-charcoal-mid);
+      border-top: 1px solid rgba(201,152,42,0.1);
+    }
+
+    .faq-list {
+      max-width: 780px;
+      margin-inline: auto;
+    }
+
+    /* Pricing contact note */
+    .pricing-contact-note {
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      margin-top: var(--space-4);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="header-logo" aria-label="AJ Silver Service — Home">
+          <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+        </a>
+
+        <!-- Desktop phone -->
+
+        <!-- Main nav -->
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="menus.html">Menus</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="packages.html" class="active">Packages</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-right">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+          <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="menus.html">Menus</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="packages.html" class="active">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:[PHONE NUMBER]" style="color: var(--color-silver);">[PHONE NUMBER]</a>
+      <div class="mobile-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-hero pattern-bg" aria-labelledby="packages-hero-title">
+      <div class="container">
+        <div class="page-hero-inner">
+          <span class="page-hero-label">Pricing &amp; Packages</span>
+          <h1 class="page-hero-title" id="packages-hero-title">Packages &amp; Pricing</h1>
+          <p class="page-hero-subtitle">Transparent pricing, exceptional value</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PRICING CARDS ═══ -->
+    <section class="section bg-dark" aria-labelledby="pricing-heading">
+      <div class="container">
+
+        <div class="section-head centered animate-on-scroll">
+          <span class="section-label">Choose Your Package</span>
+          <h2 class="section-title" id="pricing-heading">Simple, <span>Honest</span> Pricing</h2>
+          <span class="gold-rule-short"></span>
+          <p class="section-subtitle">Every package includes our signature care and attention. We work with you to ensure your celebration is everything you imagined — and more.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Essential -->
+          <div class="pricing-card animate-on-scroll" aria-label="Essential package">
+            <div class="pricing-tier">Essential</div>
+            <h3 class="pricing-name">Essential</h3>
+            <div class="pricing-price">
+              <span class="pricing-from">From</span>
+              <span class="pricing-amount">£18</span>
+              <span class="pricing-unit">per head</span>
+            </div>
+            <p class="pricing-desc">Perfect for smaller, self-service gatherings where simplicity and flavour are the priority.</p>
+
+            <span class="pricing-guest-range">
+              <svg viewBox="0 0 20 20" aria-hidden="true" style="width:12px;height:12px;fill:currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+              20–80 Guests
+            </span>
+
+            <ul class="pricing-features" aria-label="Included in Essential">
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                1 starter course
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                2 main dishes of your choice
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Rice &amp; bread included
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                1 dessert
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Self-service buffet setup
+              </li>
+              <li class="pricing-feature missing" aria-label="Not included">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                Dedicated serving staff
+              </li>
+              <li class="pricing-feature missing" aria-label="Not included">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                Crockery hire
+              </li>
+              <li class="pricing-feature missing" aria-label="Not included">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                Premium dish options
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-outline" style="width:100%">Get a Quote</a>
+          </div>
+
+          <!-- Premium (featured) -->
+          <div class="pricing-card featured animate-on-scroll" aria-label="Premium package — most popular">
+            <div class="pricing-tier">Premium</div>
+            <h3 class="pricing-name">Premium</h3>
+            <div class="pricing-price">
+              <span class="pricing-from">From</span>
+              <span class="pricing-amount">£26</span>
+              <span class="pricing-unit">per head</span>
+            </div>
+            <p class="pricing-desc">Our most popular package — a full, generous spread with attentive service and everything your guests need.</p>
+
+            <span class="pricing-guest-range">
+              <svg viewBox="0 0 20 20" aria-hidden="true" style="width:12px;height:12px;fill:currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+              30–200 Guests
+            </span>
+
+            <ul class="pricing-features" aria-label="Included in Premium">
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                3 starter courses
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                4 mains including signature biryani
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Sides, rice &amp; assorted breads
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                2 desserts
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Dedicated serving staff
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Crockery &amp; cutlery provided
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Full setup &amp; teardown
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Dietary accommodations
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="width:100%">Get a Quote</a>
+          </div>
+
+          <!-- Bespoke -->
+          <div class="pricing-card animate-on-scroll" aria-label="Bespoke package">
+            <div class="pricing-tier">Bespoke</div>
+            <h3 class="pricing-name">Bespoke</h3>
+            <div class="pricing-price" style="flex-direction: column; align-items: flex-start; gap: var(--space-1);">
+              <span class="pricing-amount" style="font-size: var(--text-2xl); color: var(--color-silver);">Tailored Quote</span>
+            </div>
+            <p class="pricing-desc">For events that demand something truly exceptional — we build your package from the ground up around your vision.</p>
+
+            <span class="pricing-guest-range">
+              <svg viewBox="0 0 20 20" aria-hidden="true" style="width:12px;height:12px;fill:currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+              Any Size
+            </span>
+
+            <ul class="pricing-features" aria-label="Included in Bespoke">
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Fully custom menu design
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Dedicated event coordinator
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Premium serving staff
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Crockery &amp; full equipment
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Complete setup &amp; teardown
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                All dietary requirements met
+              </li>
+              <li class="pricing-feature">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Venue consultation included
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-outline" style="width:100%">Talk to Us</a>
+          </div>
+
+        </div>
+
+        <p class="pricing-bespoke-note animate-on-scroll">
+          Pricing varies based on your event's scale, menu choices, and logistics. Contact us to discuss your vision.
+        </p>
+
+      </div>
+    </section>
+
+    <hr class="gold-rule" style="margin-block: 0;" aria-hidden="true" />
+
+    <!-- ═══ FAQ ACCORDION ═══ -->
+    <section class="section faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="section-head centered animate-on-scroll">
+          <span class="section-label">Common Questions</span>
+          <h2 class="section-title" id="faq-heading">Frequently <span>Asked</span></h2>
+          <span class="gold-rule-short"></span>
+          <p class="section-subtitle">Everything you need to know before booking. Don't see your question? Just get in touch.</p>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              Do you provide serving staff?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Serving staff are included as standard in both the Premium and Bespoke packages, ensuring your guests are looked after throughout the meal. For Essential packages, dedicated serving staff can be added on as an optional extra — just mention it when you enquire.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              Is your food Halal certified?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes, absolutely. All meat used in our cooking is sourced exclusively from Halal-certified suppliers. We are proud to offer 100% Halal catering across every single one of our menus and packages, without exception. Your guests can eat with complete confidence and peace of mind.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              What is the minimum guest count?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Our minimum is generally 20 guests for standard packages. However, we do understand that some occasions are intentionally small and intimate — if you're planning a private family dinner or a quiet gathering with fewer guests, please contact us directly and we'll be happy to discuss what we can do for you.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              Do you provide crockery and equipment?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Crockery, cutlery, serving dishes, and chafing dishes are included as standard in Premium and Bespoke packages. For Essential packages, we use high-quality catering-grade disposable serving ware, which keeps things clean, practical, and professional without the added hire cost.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              How far in advance should I book?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                We recommend booking at least 4–6 weeks in advance for smaller events and birthday gatherings. For weddings, Eid celebrations, and large-scale events, we strongly advise booking 3–6 months ahead. Popular dates — particularly over Eid, summer weekends, and the festive period — fill up very quickly, so early booking is always the wisest approach.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll" role="listitem">
+            <button class="faq-question" type="button">
+              Do you cater outside of our local area?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes, we are proud to serve communities across the UK. We have catered events in many cities and regions and are happy to travel to where you need us. Travel and logistics costs may apply for longer distances — please contact us with your location and we'll provide a tailored quote that takes everything into account.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ═══ -->
+    <section class="section bg-dark" aria-label="Book your event">
+      <div class="container">
+        <div class="cta-banner animate-on-scroll">
+          <h2 class="cta-banner-title">Ready to Book Your <span style="color:var(--color-gold)">Celebration?</span></h2>
+          <p class="cta-banner-subtitle">Get in touch today for a no-obligation quote tailored to your event.</p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote</a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+               class="btn btn-whatsapp btn-lg"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div>
+          <div class="footer-logo">
+            <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+          </div>
+          <p class="footer-tagline">...A truly remarkable experience</p>
+          <p class="footer-bangla">আমাদের সেবায় আপনাকে স্বাগতম</p>
+          <div class="footer-halal">
+            <div class="halal-badge" style="width:64px;height:64px;" aria-label="Halal certified">
+              <span class="badge-top" style="font-size:7px;">100%</span>
+              <span class="badge-main" style="font-size:14px;">Halal</span>
+              <span class="badge-sub" style="font-size:6px;">Certified</span>
+            </div>
+          </div>
+          <div class="footer-social" style="margin-top: var(--space-5);">
+            <a href="[INSTAGRAM HANDLE]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="[FACEBOOK URL]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="menus.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="packages.html">Packages &amp; Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact &amp; Enquiry</a>
+          </nav>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-col-title">Get in Touch</h3>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <span><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            <span><a href="mailto:info@ajsilverservice.co.uk">info@ajsilverservice.co.uk</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            <span>Serving communities across the UK</span>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+               class="btn btn-whatsapp btn-sm"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="width:16px;height:16px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 AJ Silver Service. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING WHATSAPP ═══ -->
+  <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

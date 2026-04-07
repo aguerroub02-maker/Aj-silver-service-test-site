@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — AJ Silver Service</title>
+  <meta name="description" content="Browse the AJ Silver Service gallery — a glimpse into the events, food, and occasions we've been honoured to be part of." />
+  <meta name="keywords" content="Bengali caterer UK, halal catering, South Asian catering, wedding caterer, Eid catering, dawat catering" />
+  <meta property="og:title" content="AJ Silver Service — A Truly Remarkable Experience" />
+  <meta property="og:description" content="Authentic halal Bengali catering for all occasions." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+    .gallery-placeholder-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-style: italic;
+      color: rgba(201,152,42,0.35);
+      font-size: var(--text-base);
+      letter-spacing: 0.04em;
+      padding: var(--space-6);
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo" aria-label="AJ Silver Service — Home">
+          <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="menus.html">Menus</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="packages.html">Packages</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-right">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+          <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="menus.html">Menus</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:[PHONE NUMBER]" style="color: var(--color-silver);">[PHONE NUMBER]</a>
+      <div class="mobile-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <div class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="page-hero-label">Our Work</span>
+        <h1 class="page-hero-title">Gallery</h1>
+        <p class="page-hero-subtitle">A glimpse into every celebration — the food, the presentation, the moments we've been honoured to be part of.</p>
+      </div>
+    </div>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="section bg-dark" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 class="sr-only" id="gallery-heading">Photo gallery</h2>
+
+        <!-- Filter bar -->
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by event type">
+          <button class="gallery-filter-btn active" data-filter="all">All</button>
+          <button class="gallery-filter-btn" data-filter="weddings">Weddings</button>
+          <button class="gallery-filter-btn" data-filter="eid">Eid</button>
+          <button class="gallery-filter-btn" data-filter="birthdays">Birthdays</button>
+          <button class="gallery-filter-btn" data-filter="corporate">Corporate</button>
+          <button class="gallery-filter-btn" data-filter="family">Family</button>
+        </div>
+
+        <!-- Gallery masonry grid -->
+        <div class="gallery-grid">
+
+          <!-- Replace with actual food photography -->
+
+          <div class="gallery-item" data-category="weddings">
+            <div class="placeholder-food-1 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Wedding Biryani Spread</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Wedding Shaadi — Biryani Setup</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="eid">
+            <div class="placeholder-food-2 gallery-placeholder" style="aspect-ratio:3/4;">
+              <div class="gallery-placeholder-inner">Eid Celebration Spread</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Eid Gathering — Full Dawat</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="weddings">
+            <div class="placeholder-food-3 gallery-placeholder" style="aspect-ratio:1/1;">
+              <div class="gallery-placeholder-inner">Wedding Starters Display</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Wedding — Starter Selection</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="birthdays">
+            <div class="placeholder-food-4 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Birthday Celebration Feast</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Birthday Party — Bengali Spread</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="corporate">
+            <div class="placeholder-food-5 gallery-placeholder" style="aspect-ratio:3/2;">
+              <div class="gallery-placeholder-inner">Corporate Buffet Setup</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Corporate Event — Buffet</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="eid">
+            <div class="placeholder-food-6 gallery-placeholder" style="aspect-ratio:3/4;">
+              <div class="gallery-placeholder-inner">Eid Korma &amp; Rice</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Eid — Mutton Korma</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="family">
+            <div class="placeholder-food-1 gallery-placeholder" style="aspect-ratio:1/1;">
+              <div class="gallery-placeholder-inner">Family Gathering</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Family Event — Home-Style</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="weddings">
+            <div class="placeholder-food-2 gallery-placeholder" style="aspect-ratio:4/5;">
+              <div class="gallery-placeholder-inner">Wedding Dessert Table</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Wedding — Mishti Selection</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="birthdays">
+            <div class="placeholder-food-3 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Milestone Birthday</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Milestone Birthday — Full Menu</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="corporate">
+            <div class="placeholder-food-4 gallery-placeholder" style="aspect-ratio:3/4;">
+              <div class="gallery-placeholder-inner">Corporate Dining Setup</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Corporate Lunch — Plated</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="eid">
+            <div class="placeholder-food-5 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Eid Biryani &amp; Rezala</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Eid — Kacchi Biryani</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="family">
+            <div class="placeholder-food-6 gallery-placeholder" style="aspect-ratio:1/1;">
+              <div class="gallery-placeholder-inner">Intimate Family Dawat</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Family Occasion — Bespoke</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="weddings">
+            <div class="placeholder-food-1 gallery-placeholder" style="aspect-ratio:3/2;">
+              <div class="gallery-placeholder-inner">Shaadi Buffet Table</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Wedding Shaadi — Full Spread</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="birthdays">
+            <div class="placeholder-food-2 gallery-placeholder" style="aspect-ratio:3/4;">
+              <div class="gallery-placeholder-inner">Birthday Sweets</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Birthday — Bengali Sweet Table</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="family">
+            <div class="placeholder-food-3 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Family Celebration</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Family Event — Personalised</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="corporate">
+            <div class="placeholder-food-4 gallery-placeholder" style="aspect-ratio:4/3;">
+              <div class="gallery-placeholder-inner">Professional Setup</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Corporate — Presented Buffet</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="eid">
+            <div class="placeholder-food-5 gallery-placeholder" style="aspect-ratio:1/1;">
+              <div class="gallery-placeholder-inner">Community Eid Feast</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Eid — Community Gathering</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="weddings">
+            <div class="placeholder-food-6 gallery-placeholder" style="aspect-ratio:3/4;">
+              <div class="gallery-placeholder-inner">Wedding Reception</div>
+            </div>
+            <div class="gallery-overlay" aria-hidden="true">
+              <span class="gallery-overlay-label">Wedding — Reception Spread</span>
+            </div>
+          </div>
+
+        </div><!-- /.gallery-grid -->
+      </div>
+    </section>
+
+    <!-- ═══ INSTAGRAM SECTION ═══ -->
+    <section class="section bg-mid" aria-labelledby="instagram-heading">
+      <div class="container">
+        <div class="section-head centered animate-on-scroll">
+          <span class="section-label">Follow Along</span>
+          <h2 class="section-title" id="instagram-heading">Find Us on <span>Instagram</span></h2>
+          <span class="gold-rule-short"></span>
+          <p class="section-subtitle">Follow our journey — every event, every dish, every story. Tag us in your photos so we can celebrate together.</p>
+        </div>
+
+        <!-- Instagram embed placeholder -->
+        <div style="border:1px solid rgba(201,152,42,0.3); border-radius:var(--radius-xl); padding:var(--space-12); text-align:center; background:var(--color-charcoal-lift);" class="animate-on-scroll">
+          <!-- Connect Instagram API here to display live feed -->
+          <div style="margin-bottom:var(--space-5);">
+            <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);margin:0 auto var(--space-4);display:flex;align-items:center;justify-content:center;">
+              <svg viewBox="0 0 24 24" style="width:32px;height:32px;fill:white;" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-text); margin-bottom:var(--space-2);">Connect with us on Instagram</h3>
+            <p style="font-size:var(--text-sm); color:var(--color-text-muted); margin-bottom:var(--space-5);">
+              Follow <strong style="color:var(--color-gold);">[INSTAGRAM HANDLE]</strong> for behind-the-scenes moments, event highlights, and the food that brings families together.
+            </p>
+            <a href="[INSTAGRAM HANDLE]" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              Follow Us on Instagram
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="section bg-dark" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner animate-on-scroll">
+          <h2 class="cta-banner-title">Love what you see?<br /><em style="color:var(--color-gold);">Book us for your event.</em></h2>
+          <p class="cta-banner-subtitle">Every event is a new canvas. Let us bring the same care, craft, and flavour to your occasion.</p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote</a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+               class="btn btn-whatsapp btn-lg"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+          </div>
+          <p class="footer-tagline">...A truly remarkable experience</p>
+          <p class="footer-bangla">আমাদের সেবায় আপনাকে স্বাগতম</p>
+          <div class="footer-halal">
+            <div class="halal-badge" style="width:64px;height:64px;" aria-label="Halal certified">
+              <span class="badge-top" style="font-size:7px;">100%</span>
+              <span class="badge-main" style="font-size:14px;">Halal</span>
+              <span class="badge-sub" style="font-size:6px;">Certified</span>
+            </div>
+          </div>
+          <div class="footer-social" style="margin-top:var(--space-5);">
+            <a href="[INSTAGRAM HANDLE]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="[FACEBOOK URL]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="menus.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="packages.html">Packages &amp; Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact &amp; Enquiry</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Get in Touch</h3>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <span><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            <span><a href="mailto:info@ajsilverservice.co.uk">info@ajsilverservice.co.uk</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            <span>Serving communities across the UK</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 AJ Silver Service. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING WHATSAPP ═══ -->
+  <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+     class="whatsapp-float"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

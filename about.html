@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — AJ Silver Service</title>
+  <meta name="description" content="Learn the story behind AJ Silver Service — a Bengali-British halal catering company rooted in heritage, community, and a deep love for authentic home cooking." />
+  <meta name="keywords" content="about AJ Silver Service, Bengali caterer story, halal catering UK, South Asian caterer background" />
+  <meta property="og:title" content="About AJ Silver Service — Rooted in Heritage, Crafted with Love" />
+  <meta property="og:description" content="From family kitchen to your celebration — our story of authentic Bengali-British halal catering." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+    /* ── STORY SECTION ── */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .story-grid {
+        grid-template-columns: 1.3fr 1fr;
+        gap: var(--space-16);
+      }
+    }
+
+    .story-text p + p {
+      margin-top: var(--space-5);
+    }
+
+    .founder-image-block {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    .founder-image-frame {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 2/3;
+      border: 2px solid var(--color-gold);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(160deg, rgba(201,152,42,0.08) 0%, var(--color-charcoal-card) 100%);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-gold-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .founder-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-image-frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,20,22,0.6) 0%, transparent 50%);
+    }
+
+    .founder-image-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      padding: var(--space-8);
+      text-align: center;
+    }
+
+    .founder-image-placeholder svg {
+      width: 64px;
+      height: 64px;
+      fill: rgba(201,152,42,0.3);
+    }
+
+    .founder-image-placeholder span {
+      font-size: var(--text-sm);
+      color: var(--color-text-subtle);
+      font-style: italic;
+    }
+
+    .founder-caption {
+      font-size: var(--text-sm);
+      color: var(--color-text-subtle);
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ── PILLAR CARDS ── */
+    .pillar-card {
+      background-color: var(--color-charcoal-card);
+      border: 1px solid var(--color-charcoal-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8) var(--space-6);
+      transition: transform var(--transition-spring),
+                  box-shadow var(--transition-base),
+                  border-color var(--transition-base);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: rgba(201,152,42,0.3);
+    }
+
+    .pillar-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-full);
+      background: radial-gradient(circle, rgba(201,152,42,0.15) 0%, rgba(201,152,42,0.05) 70%);
+      border: 1px solid rgba(201,152,42,0.25);
+      margin-bottom: var(--space-5);
+    }
+
+    .pillar-icon svg {
+      width: 26px;
+      height: 26px;
+      fill: var(--color-gold);
+    }
+
+    .pillar-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      margin-bottom: var(--space-3);
+    }
+
+    .pillar-desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── CERTIFICATION BLOCK ── */
+    .cert-block {
+      border: 1px solid var(--color-silver-dark);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      background-color: rgba(168,178,188,0.04);
+      max-width: 640px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .cert-block p {
+      font-size: var(--text-base);
+      color: var(--color-silver);
+      line-height: 1.75;
+    }
+
+    /* ── COMMUNITY SECTION ── */
+    .community-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .community-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-16);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="header-logo" aria-label="AJ Silver Service — Home">
+          <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+        </a>
+
+        <!-- Desktop phone -->
+
+        <!-- Main nav -->
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="menus.html">Menus</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="packages.html">Packages</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-right">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+          <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="menus.html">Menus</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:[PHONE NUMBER]" style="color: var(--color-silver);">[PHONE NUMBER]</a>
+      <div class="mobile-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-hero pattern-bg" aria-labelledby="about-hero-title">
+      <div class="container">
+        <div class="page-hero-inner">
+          <span class="page-hero-label">Our Story</span>
+          <h1 class="page-hero-title" id="about-hero-title">About AJ Silver Service</h1>
+          <p class="page-hero-subtitle">Rooted in heritage, crafted with love</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FOUNDER STORY ═══ -->
+    <section class="section bg-dark" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story-grid">
+
+          <!-- Text left -->
+          <div class="story-text animate-on-scroll">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title" id="story-heading">Our Story</h2>
+            <p class="section-subtitle" style="margin-bottom: var(--space-3);">From family kitchen to your celebration</p>
+            <span class="gold-rule-short"></span>
+
+            <p>
+              Growing up in a Bengali household in Britain, food was never just sustenance — it was language. It was the slow simmer of dal on a Sunday afternoon, the scent of whole spices crackling in oil, the gathering of aunties in the kitchen arguing lovingly over whether the biryani needed more ghee. Every meal told a story, and every gathering was an occasion worth honouring. Those memories are the foundation of everything we do at AJ Silver Service.
+            </p>
+
+            <p>
+              As we grew older, we noticed a gap — a real, felt absence. The community deserved catering that reflected who we truly are: our flavours, our traditions, our warmth. Too many events were served food that felt generic, disconnected from the heritage and care that our celebrations deserve. We knew we could do better. Not just better food, but a better experience — one that felt like home, no matter how large the venue.
+            </p>
+
+            <p>
+              AJ Silver Service was born from that conviction. What started with small family gatherings — dawats for thirty, Eid lunches for the neighbours — grew steadily, event by event, family by family, into the full-service catering company you see today. We have now had the honour of serving hundreds of events across the UK, from intimate funerals to five-hundred-guest shaadis. Through it all, the food has never changed: it is made with the same hands, the same recipes, and the same love as it always was.
+            </p>
+          </div>
+
+          <!-- Image right -->
+          <div class="founder-image-block animate-on-scroll">
+            <div class="founder-image-frame">
+              <div class="founder-image-placeholder">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <span>Founder portrait</span>
+              </div>
+            </div>
+            <p class="founder-caption">Founder &mdash; AJ Silver Service</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="gold-rule" style="margin-block: 0;" aria-hidden="true" />
+
+    <!-- ═══ WHY AJ SILVER SERVICE ═══ -->
+    <section class="section bg-mid" aria-labelledby="pillars-heading">
+      <div class="container">
+
+        <div class="section-head centered animate-on-scroll">
+          <span class="section-label">Our Values</span>
+          <h2 class="section-title" id="pillars-heading">Why Families <span>Trust Us</span></h2>
+          <span class="gold-rule-short"></span>
+          <p class="section-subtitle">Four pillars that sit at the heart of every event we cater — from the smallest gathering to the grandest celebration.</p>
+        </div>
+
+        <div class="grid-4">
+
+          <div class="pillar-card animate-on-scroll">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V15c0 2.21 3.58 4 7 4s7-1.79 7-4v-3.82L22 9 12 3zm6 10c0 .5-1.38 1.5-4 1.87V16h-4v-2.13C7.38 13.5 6 12.5 6 12v-1.92l6-3.5 6 3.5V13z"/></svg>
+            </div>
+            <h3 class="pillar-title">Authenticity</h3>
+            <p class="pillar-desc">Every recipe carries the memory of a home kitchen. We use traditional Bengali techniques and whole spices — no shortcuts, no compromise. What you taste is what we grew up eating.</p>
+          </div>
+
+          <div class="pillar-card animate-on-scroll">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+            </div>
+            <h3 class="pillar-title">Halal</h3>
+            <p class="pillar-desc">100% Halal sourcing from certified suppliers, every time. There is no grey area here. Your guests eat with full confidence, knowing every ingredient meets the highest standards.</p>
+          </div>
+
+          <div class="pillar-card animate-on-scroll">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>
+            </div>
+            <h3 class="pillar-title">Experience</h3>
+            <p class="pillar-desc">Over a decade of events, from intimate family gatherings to 500-guest shaadis. We have seen and solved every challenge — and we bring that calm, practiced expertise to your celebration.</p>
+          </div>
+
+          <div class="pillar-card animate-on-scroll">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <h3 class="pillar-title">Community</h3>
+            <p class="pillar-desc">Bengali-owned, community-minded. We understand your celebration because it is our celebration too. We speak your language — in every sense — and it shows in every dish we serve.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="gold-rule" style="margin-block: 0;" aria-hidden="true" />
+
+    <!-- ═══ COMMUNITY & CERTIFICATIONS ═══ -->
+    <section class="section bg-dark" aria-labelledby="trust-heading">
+      <div class="container">
+
+        <div class="section-head centered animate-on-scroll">
+          <span class="section-label">Trust &amp; Standards</span>
+          <h2 class="section-title" id="trust-heading">Community, Trust <span>&amp; Certification</span></h2>
+          <span class="gold-rule-short"></span>
+        </div>
+
+        <div class="community-content">
+
+          <div class="animate-on-scroll">
+            <p style="margin-bottom: var(--space-5);">
+              We are a business built on trust — the trust of families who have welcomed us into some of their most significant moments. That responsibility is one we carry with deep sincerity. From the moment you enquire to the final dish served, our commitment is to your peace of mind.
+            </p>
+            <p style="margin-bottom: var(--space-5);">
+              Our Halal certification is not a marketing claim — it is a promise maintained at every step of our supply chain. Every supplier we work with is independently Halal-certified, and we review those relationships regularly. We are active members of the communities we serve, and our reputation within them is something we guard fiercely.
+            </p>
+            <p>
+              Whether you are organising a wedding for three hundred guests or a quiet Fatiha meal for close family, you can rely on us to arrive prepared, serve with care, and leave your venue as we found it. We have built our business entirely through word of mouth — and we intend to keep it that way.
+            </p>
+          </div>
+
+          <div class="animate-on-scroll" style="display: flex; flex-direction: column; align-items: center; gap: var(--space-8);">
+
+            <!-- Halal badge prominent display -->
+            <div style="display: flex; flex-direction: column; align-items: center; gap: var(--space-4);">
+              <div class="halal-badge" style="width:100px;height:100px;" aria-label="100% Halal certified">
+                <span class="badge-top" style="font-size:10px;">100%</span>
+                <span class="badge-main" style="font-size:22px;">Halal</span>
+                <span class="badge-sub" style="font-size:8px;">Certified</span>
+              </div>
+              <p style="text-align:center; font-size: var(--text-sm); color: var(--color-gold); font-weight: 600; letter-spacing: 0.05em;">Halal Certified Catering</p>
+            </div>
+
+            <!-- Certification block -->
+            <div class="cert-block">
+              <p>
+                <strong style="color: var(--color-silver-light);">All ingredients sourced from Halal-certified suppliers.</strong><br />
+                We maintain the highest food hygiene standards across every stage of preparation, transport, and service — because your trust is not something we take lightly.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ═══ -->
+    <section class="section bg-mid" aria-label="Plan your event">
+      <div class="container">
+        <div class="cta-banner animate-on-scroll">
+          <h2 class="cta-banner-title">Ready to Plan Your <span style="color:var(--color-gold)">Event?</span></h2>
+          <p class="cta-banner-subtitle">Let's talk about your occasion. We'd love to be part of it.</p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote</a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+               class="btn btn-whatsapp btn-lg"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div>
+          <div class="footer-logo">
+            <img src="assets/images/aj_silver_serv-nobg.png" alt="AJ Silver Service logo" />
+          </div>
+          <p class="footer-tagline">...A truly remarkable experience</p>
+          <p class="footer-bangla">আমাদের সেবায় আপনাকে স্বাগতম</p>
+          <div class="footer-halal">
+            <div class="halal-badge" style="width:64px;height:64px;" aria-label="Halal certified">
+              <span class="badge-top" style="font-size:7px;">100%</span>
+              <span class="badge-main" style="font-size:14px;">Halal</span>
+              <span class="badge-sub" style="font-size:6px;">Certified</span>
+            </div>
+          </div>
+          <div class="footer-social" style="margin-top: var(--space-5);">
+            <a href="[INSTAGRAM HANDLE]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="[FACEBOOK URL]" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/[WHATSAPP NUMBER]" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="menus.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="packages.html">Packages &amp; Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact &amp; Enquiry</a>
+          </nav>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-col-title">Get in Touch</h3>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <span><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            <span><a href="mailto:info@ajsilverservice.co.uk">info@ajsilverservice.co.uk</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            <span>Serving communities across the UK</span>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+               class="btn btn-whatsapp btn-sm"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="width:16px;height:16px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 AJ Silver Service. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING WHATSAPP ═══ -->
+  <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
