@@ -14,6 +14,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
+  <style>
+    .contact-form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+    .contact-side-image { display: none; }
+    @media (min-width: 960px) {
+      .contact-form-grid { grid-template-columns: 1.2fr 1fr; }
+      .contact-side-image { display: block; }
+    }
+  </style>
 </head>
 <body>
 
@@ -60,6 +73,7 @@
 
     <!-- ═══ PAGE HERO ═══ -->
     <div class="page-hero">
+      <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=1600&h=600&fit=crop&q=80" alt="" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.18;" aria-hidden="true" />
       <div class="container page-hero-inner">
         <span class="page-hero-label">Reach Out</span>
         <h1 class="page-hero-title">Contact &amp; <span style="color:var(--color-gold)">Enquiry</span></h1>
@@ -101,10 +115,10 @@
     <!-- ═══ ENQUIRY FORM + SIDE INFO ═══ -->
     <section class="section bg-dark" aria-labelledby="form-heading">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1fr; gap:var(--space-12); align-items:start;">
+        <div class="contact-form-grid">
 
           <!-- ── LEFT: Form ── -->
-          <div style="max-width:720px;">
+          <div>
             <div class="section-head animate-on-scroll">
               <span class="section-label">Enquiry Form</span>
               <h2 class="section-title" id="form-heading">Send an <span>Enquiry</span></h2>
@@ -250,6 +264,18 @@
             </form>
           </div>
 
+          <!-- ── RIGHT: Ambiance image (desktop only) ── -->
+          <div style="display:none;" class="contact-side-image">
+            <div style="position:sticky; top:calc(var(--nav-height) + var(--space-8)); border-radius:var(--radius-xl); overflow:hidden; aspect-ratio:2/3; box-shadow:0 24px 64px rgba(27,58,45,0.25);">
+              <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=700&h=1050&fit=crop&q=80" alt="AJ Silver Service — professional catering presentation" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(27,58,45,0.7) 0%,transparent 50%);"></div>
+              <div style="position:absolute;bottom:var(--space-8);left:var(--space-8);right:var(--space-8);">
+                <p style="font-family:var(--font-display);font-size:var(--text-2xl);color:#FAFAF8;font-style:italic;line-height:1.3;margin-bottom:var(--space-2);">"Every gathering, honoured"</p>
+                <p style="font-size:var(--text-sm);color:rgba(250,250,248,0.7);">Authentic halal Bengali catering across the UK</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -265,12 +291,15 @@
             <p style="font-size:var(--text-sm); color:var(--color-text-muted); margin-bottom:var(--space-6);">We serve communities across the UK — contact us to check availability in your area.</p>
 
             <!-- Replace with Google Maps embed for [GOOGLE MAPS EMBED URL] -->
-            <div style="border:1px solid rgba(201,152,42,0.25); border-radius:var(--radius-lg); height:380px; display:flex; align-items:center; justify-content:center; background:var(--color-charcoal-lift); overflow:hidden; position:relative;">
+            <div style="border:1px solid rgba(201,152,42,0.25); border-radius:var(--radius-lg); height:380px; overflow:hidden; position:relative;">
               <!-- Replace with: <iframe src="[GOOGLE MAPS EMBED URL]" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-              <div style="text-align:center; padding:var(--space-8);">
-                <svg viewBox="0 0 24 24" style="width:48px;height:48px;fill:var(--color-gold);opacity:0.4;margin:0 auto var(--space-4);" aria-hidden="true"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.079 3.43-4.793 3.43-8.327a8.72 8.72 0 00-8.72-8.72 8.72 8.72 0 00-8.72 8.72c0 3.534 1.487 6.248 3.43 8.327a19.58 19.58 0 002.683 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
-                <p style="font-family:var(--font-display); font-size:var(--text-xl); color:var(--color-text-muted); font-style:italic;">Map placeholder</p>
-                <p style="font-size:var(--text-xs); color:var(--color-text-subtle); margin-top:var(--space-2);">Replace with Google Maps embed</p>
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&h=380&fit=crop&q=80" alt="UK-wide catering service" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              <div style="position:absolute;inset:0;background:rgba(20,20,22,0.55);display:flex;align-items:center;justify-content:center;">
+                <div style="text-align:center; padding:var(--space-8);">
+                  <svg viewBox="0 0 24 24" style="width:48px;height:48px;fill:var(--color-gold);opacity:0.8;margin:0 auto var(--space-4);" aria-hidden="true"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.079 3.43-4.793 3.43-8.327a8.72 8.72 0 00-8.72-8.72 8.72 8.72 0 00-8.72 8.72c0 3.534 1.487 6.248 3.43 8.327a19.58 19.58 0 002.683 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+                  <p style="font-family:var(--font-display); font-size:var(--text-xl); color:#FAFAF8; font-style:italic;">Serving communities across the UK</p>
+                  <p style="font-size:var(--text-xs); color:rgba(250,250,248,0.7); margin-top:var(--space-2);">Add your Google Maps embed here</p>
+                </div>
               </div>
             </div>
           </div>

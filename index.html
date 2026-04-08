@@ -185,17 +185,30 @@
       overflow: hidden;
     }
 
+    .dish-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 400ms ease;
+    }
+
+    .dish-card:hover .dish-image img {
+      transform: scale(1.05);
+    }
+
     .dish-image::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(20,20,22,0.75) 0%, transparent 60%);
+      background: linear-gradient(to top, rgba(20,20,22,0.6) 0%, transparent 60%);
+      z-index: 2;
     }
 
     .dish-image-overlay {
       position: absolute;
       inset: 0;
-      background-color: rgba(201,152,42,0.08);
+      background-color: rgba(27,58,45,0.15);
       mix-blend-mode: multiply;
       z-index: 1;
     }
@@ -282,9 +295,17 @@
       <div class="hero-pattern" aria-hidden="true"></div>
       <div class="hero-grain" aria-hidden="true"></div>
 
-      <!-- Decorative rings -->
+      <!-- Decorative right panel — food image -->
       <div class="hero-deco" aria-hidden="true">
         <div class="hero-deco-glow"></div>
+        <div style="position:absolute;top:50%;right:8%;transform:translateY(-50%);width:380px;height:500px;border-radius:24px;overflow:hidden;border:1px solid rgba(201,152,42,0.25);box-shadow:0 32px 80px rgba(27,58,45,0.35);">
+          <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=760&h=1000&fit=crop&q=80" alt="Grand biryani — AJ Silver Service signature dish" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(27,58,45,0.6) 0%,transparent 50%);"></div>
+          <div style="position:absolute;bottom:var(--space-6);left:var(--space-6);right:var(--space-6);">
+            <p style="font-family:var(--font-display);font-size:var(--text-xl);color:#FAFAF8;font-style:italic;">Kacchi Biryani</p>
+            <p style="font-size:var(--text-xs);color:rgba(250,250,248,0.7);letter-spacing:0.1em;text-transform:uppercase;">Our Signature Dish</p>
+          </div>
+        </div>
         <div class="hero-deco-ring"></div>
         <div class="hero-deco-ring"></div>
         <div class="hero-deco-ring"></div>
@@ -471,12 +492,10 @@
 
           <!-- Dish 1 -->
           <article class="dish-card animate-on-scroll">
-            <div class="dish-image placeholder-food-1">
-              <!-- Replace with actual food photography -->
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&h=500&fit=crop&q=80" alt="Kacchi Biryani — fragrant slow-cooked rice with whole spices" loading="lazy" />
               <div class="dish-image-overlay" aria-hidden="true"></div>
-              <div style="height:220px; display:flex; align-items:center; justify-content:center; padding: var(--space-6);">
-                <span style="font-family: var(--font-display); font-size: 3rem; color: rgba(201,152,42,0.2); font-style:italic;">Biryani</span>
-              </div>
+              <div class="color-layer" aria-hidden="true"></div>
             </div>
             <div class="dish-body">
               <h3 class="dish-name">Kacchi Biryani</h3>
@@ -486,12 +505,10 @@
 
           <!-- Dish 2 -->
           <article class="dish-card animate-on-scroll">
-            <div class="dish-image placeholder-food-3">
-              <!-- Replace with actual food photography -->
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=500&fit=crop&q=80" alt="Mutton Rezala — tender mutton in silky white yoghurt gravy" loading="lazy" />
               <div class="dish-image-overlay" aria-hidden="true"></div>
-              <div style="height:220px; display:flex; align-items:center; justify-content:center; padding: var(--space-6);">
-                <span style="font-family: var(--font-display); font-size: 3rem; color: rgba(201,152,42,0.2); font-style:italic;">Rezala</span>
-              </div>
+              <div class="color-layer" aria-hidden="true"></div>
             </div>
             <div class="dish-body">
               <h3 class="dish-name">Mutton Rezala</h3>
@@ -501,12 +518,10 @@
 
           <!-- Dish 3 -->
           <article class="dish-card animate-on-scroll">
-            <div class="dish-image placeholder-food-2">
-              <!-- Replace with actual food photography -->
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=500&fit=crop&q=80" alt="Bengali sweets — mishti doi, gulab jamun and seasonal mithai" loading="lazy" />
               <div class="dish-image-overlay" aria-hidden="true"></div>
-              <div style="height:220px; display:flex; align-items:center; justify-content:center; padding: var(--space-6);">
-                <span style="font-family: var(--font-display); font-size: 3rem; color: rgba(201,152,42,0.2); font-style:italic;">Mishti</span>
-              </div>
+              <div class="color-layer" aria-hidden="true"></div>
             </div>
             <div class="dish-body">
               <h3 class="dish-name">Mishti Doi &amp; Sweets</h3>
@@ -545,7 +560,9 @@
               "The food was absolutely outstanding — every single guest came to us asking who catered the wedding. The biryani was cooked to perfection. AJ Silver Service made our shaadi day truly unforgettable."
             </blockquote>
             <div class="testimonial-author">
-              <div class="testimonial-author-avatar" aria-hidden="true">A</div>
+              <div class="testimonial-author-avatar" aria-hidden="true" style="padding:0;overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=88&h=88&fit=crop&fit=faces&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              </div>
               <div>
                 <div class="testimonial-author-name">Amina B.</div>
                 <div class="testimonial-author-event">Wedding, East London</div>
@@ -565,7 +582,9 @@
               "We hired AJ Silver Service for our Eid gathering — over 150 guests. Everything was on time, perfectly presented, and the food was extraordinary. The mutton rezala alone had people going back for thirds."
             </blockquote>
             <div class="testimonial-author">
-              <div class="testimonial-author-avatar" aria-hidden="true">M</div>
+              <div class="testimonial-author-avatar" aria-hidden="true" style="padding:0;overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=88&h=88&fit=crop&fit=faces&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              </div>
               <div>
                 <div class="testimonial-author-name">Mohammed R.</div>
                 <div class="testimonial-author-event">Eid Gathering, Birmingham</div>
@@ -585,7 +604,9 @@
               "What sets AJ Silver Service apart is the warmth and care that goes into every dish. You can taste the authenticity. Our family birthday party felt like a proper dawat at home. Shukria, truly."
             </blockquote>
             <div class="testimonial-author">
-              <div class="testimonial-author-avatar" aria-hidden="true">F</div>
+              <div class="testimonial-author-avatar" aria-hidden="true" style="padding:0;overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=88&h=88&fit=crop&fit=faces&q=80" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              </div>
               <div>
                 <div class="testimonial-author-name">Fatima K.</div>
                 <div class="testimonial-author-event">Family Birthday, Manchester</div>

@@ -466,8 +466,8 @@
    TRUST BAR
    ═══════════════════════════════════════════════ */
 .trust-bar {
-  background-color: var(--color-charcoal-mid);
-  border-block: 1px solid rgba(201,152,42,0.15);
+  background-color: var(--color-green);
+  border-block: 1px solid rgba(201,152,42,0.25);
   padding-block: var(--space-6);
 }
 
@@ -521,14 +521,14 @@
 
 .trust-item-label {
   font-size: var(--text-xs);
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,0.65);
   letter-spacing: 0.05em;
 }
 
 .trust-divider {
   width: 1px;
   height: 40px;
-  background-color: rgba(255,255,255,0.08);
+  background-color: rgba(255,255,255,0.15);
   display: none;
 }
 
@@ -928,8 +928,8 @@ select.form-control option {
    ═══════════════════════════════════════════════ */
 .page-hero {
   padding-block: var(--space-20) var(--space-16);
-  background-color: var(--color-charcoal-mid);
-  border-bottom: 1px solid rgba(201,152,42,0.12);
+  background-color: var(--color-green);
+  border-bottom: 1px solid rgba(201,152,42,0.2);
   position: relative;
   overflow: hidden;
 }
@@ -973,11 +973,12 @@ select.form-control option {
 
 .page-hero-title {
   margin-bottom: var(--space-4);
+  color: #FAFAF8;
 }
 
 .page-hero-subtitle {
   font-size: var(--text-lg);
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,0.7);
   max-width: 600px;
 }
 
@@ -1075,8 +1076,8 @@ select.form-control option {
    CTA BANNER
    ═══════════════════════════════════════════════ */
 .cta-banner {
-  background: linear-gradient(135deg, var(--color-charcoal-mid) 0%, rgba(201,152,42,0.07) 50%, var(--color-charcoal-mid) 100%);
-  border: 1px solid rgba(201,152,42,0.2);
+  background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-mid) 50%, var(--color-green) 100%);
+  border: 1px solid rgba(201,152,42,0.3);
   border-radius: var(--radius-xl);
   padding: var(--space-12) var(--space-8);
   text-align: center;
@@ -1099,14 +1100,14 @@ select.form-control option {
 .cta-banner-title {
   font-family: var(--font-display);
   font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
-  color: var(--color-text);
+  color: #FAFAF8;
   margin-bottom: var(--space-4);
   position: relative;
 }
 
 .cta-banner-subtitle {
   font-size: var(--text-lg);
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,0.7);
   margin-bottom: var(--space-8);
   position: relative;
 }
