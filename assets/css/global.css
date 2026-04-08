@@ -282,6 +282,7 @@ strong { color: var(--color-text); font-weight: 600; }
   top: 0;
   z-index: 1000;
   height: var(--nav-height);
+  overflow: visible;
   background-color: rgba(20, 20, 22, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -312,21 +313,15 @@ strong { color: var(--color-text); font-weight: 600; }
 }
 
 .header-logo img {
-  height: 100px;
+  height: 200px;
   width: auto;
-  /* Outline glow — works with transparent PNG */
-  filter:
-    drop-shadow(0 0 8px rgba(201, 152, 42, 0.35))
-    drop-shadow(0 0 2px rgba(201, 152, 42, 0.5))
-    drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+  /* Pull the logo 50px out on each side to centre a 200px image in a 100px header */
+  margin-top: -50px;
+  margin-bottom: -50px;
   transition: filter var(--transition-base);
 }
 
 .header-logo:hover img {
-  filter:
-    drop-shadow(0 0 12px rgba(201, 152, 42, 0.55))
-    drop-shadow(0 0 3px rgba(201, 152, 42, 0.7))
-    drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
 }
 
 
