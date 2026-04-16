@@ -135,7 +135,7 @@
         const filter = btn.dataset.filter;
 
         galleryItems.forEach(item => {
-          const show = filter === 'all' || item.dataset.category === filter;
+          const show = filter === 'all' || item.dataset.category.split(' ').includes(filter);
           item.style.opacity = show ? '1' : '0';
           item.style.transform = show ? 'scale(1)' : 'scale(0.9)';
           item.style.transition = 'opacity 300ms ease, transform 300ms ease';
